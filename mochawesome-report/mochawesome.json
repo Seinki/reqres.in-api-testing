@@ -1,0 +1,568 @@
+{
+  "stats": {
+    "suites": 13,
+    "tests": 13,
+    "passes": 13,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-09T00:15:01.494Z",
+    "end": "2023-12-09T00:15:06.503Z",
+    "duration": 5009,
+    "testsRegistered": 13,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc03ea75-3a25-4a07-bcfa-60b5244188d1",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b5bc51d-2d04-465b-b2af-89b81ed4523e",
+          "title": "Get All Users",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetListUsers.js",
+          "file": "\\src\\test\\api\\GET\\GetListUsers.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return list of all users",
+              "fullTitle": "Get All Users should return list of all users",
+              "timedOut": false,
+              "duration": 310,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server).get(\"api/users?page=2\")\n.then((response) => {\n    console.log((response.status));\n    console.log((response.body));\n    expect(response.status).to.equal(200);\n    done()\n})\n.catch((error) => done(error));",
+              "err": {},
+              "uuid": "71ce1ffc-aac4-4793-b0d7-ab9640d80ec1",
+              "parentUUID": "8b5bc51d-2d04-465b-b2af-89b81ed4523e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "71ce1ffc-aac4-4793-b0d7-ab9640d80ec1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 310,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9bb5baa5-6523-4ad9-9c24-d5323e778f42",
+          "title": "Get Resources List By Id",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetResourceById.js",
+          "file": "\\src\\test\\api\\GET\\GetResourceById.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return a list of resource data by id",
+              "fullTitle": "Get Resources List By Id should return a list of resource data by id",
+              "timedOut": false,
+              "duration": 432,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .get(\"api/unknown/2\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    \n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "36b39de2-2850-4816-9089-b953e6a9d35a",
+              "parentUUID": "9bb5baa5-6523-4ad9-9c24-d5323e778f42",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36b39de2-2850-4816-9089-b953e6a9d35a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 432,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7d2f2d69-33ee-4081-849b-7bf804414ddb",
+          "title": "Get Resource List",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetResourceList.js",
+          "file": "\\src\\test\\api\\GET\\GetResourceList.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return a list of resource data",
+              "fullTitle": "Get Resource List should return a list of resource data",
+              "timedOut": false,
+              "duration": 115,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .get(\"api/unknown\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    \n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "a6719067-44db-4a62-a1f4-2211c6ede627",
+              "parentUUID": "7d2f2d69-33ee-4081-849b-7bf804414ddb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6719067-44db-4a62-a1f4-2211c6ede627"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 115,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9d6e50a7-d484-45c7-b21e-19c1670df2ac",
+          "title": "Get Resource List Not Found",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetResourceListNotFound.js",
+          "file": "\\src\\test\\api\\GET\\GetResourceListNotFound.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return missing resource data with status code 404",
+              "fullTitle": "Get Resource List Not Found should return missing resource data with status code 404",
+              "timedOut": false,
+              "duration": 445,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .get(\"api/users/23\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(404);\n    \n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "06d8be72-3325-43b1-87b4-c12be4c7a3cb",
+              "parentUUID": "9d6e50a7-d484-45c7-b21e-19c1670df2ac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06d8be72-3325-43b1-87b4-c12be4c7a3cb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 445,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4c48f437-8a0c-46c2-bc05-bffc6bc147e1",
+          "title": "Get Single User",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetSingleUser.js",
+          "file": "\\src\\test\\api\\GET\\GetSingleUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return the one user by id",
+              "fullTitle": "Get Single User should return the one user by id",
+              "timedOut": false,
+              "duration": 100,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .get(\"api/users/2\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    \n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "2ef6ee8b-2843-4bf1-9b2b-1c99bc0cc241",
+              "parentUUID": "4c48f437-8a0c-46c2-bc05-bffc6bc147e1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ef6ee8b-2843-4bf1-9b2b-1c99bc0cc241"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 100,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4cdb0c0f-716b-4da0-8a89-0d10734c16fc",
+          "title": "Get Single User No Password",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\GET\\GetSingleUserNotFound.js",
+          "file": "\\src\\test\\api\\GET\\GetSingleUserNotFound.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return missing user data with status code 404",
+              "fullTitle": "Get Single User No Password should return missing user data with status code 404",
+              "timedOut": false,
+              "duration": 425,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .get(\"api/users/23\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(404);\n    \n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "91cae787-707b-4243-b1d9-e00d1b04db3e",
+              "parentUUID": "4cdb0c0f-716b-4da0-8a89-0d10734c16fc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "91cae787-707b-4243-b1d9-e00d1b04db3e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 425,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0b8a1b80-76c4-498e-834c-38c9d787dd33",
+          "title": "Post New User",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\POST\\AddNewUser.js",
+          "file": "\\src\\test\\api\\POST\\AddNewUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add the new user data by returning its data value",
+              "fullTitle": "Post New User should add the new user data by returning its data value",
+              "timedOut": false,
+              "duration": 451,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .post(\"api/users\")\n  .send({\n    name: \"morpheus\",\n    job: \"zion resident\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(201);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "a3adc881-7c95-4461-bb1f-cfec51578d67",
+              "parentUUID": "0b8a1b80-76c4-498e-834c-38c9d787dd33",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a3adc881-7c95-4461-bb1f-cfec51578d67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 451,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "339a049b-dc82-46e1-b8c2-3774b7f4c583",
+          "title": "Post Login",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\POST\\LoginSuccessful.js",
+          "file": "\\src\\test\\api\\POST\\LoginSuccessful.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return the token of a valid user",
+              "fullTitle": "Post Login should return the token of a valid user",
+              "timedOut": false,
+              "duration": 440,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .post(\"api/login\")\n  .send({\n    email: \"eve.holt@reqres.in\",\n    password: \"cityslicka\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "672f2f89-0884-4e68-955f-138fbdb4acd7",
+              "parentUUID": "339a049b-dc82-46e1-b8c2-3774b7f4c583",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "672f2f89-0884-4e68-955f-138fbdb4acd7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 440,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0c32071d-4123-47ed-bf28-13e7c24ab831",
+          "title": "Post Login With No Password",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\POST\\LoginUnsuccessful.js",
+          "file": "\\src\\test\\api\\POST\\LoginUnsuccessful.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return an error message because there is no pswd data",
+              "fullTitle": "Post Login With No Password should return an error message because there is no pswd data",
+              "timedOut": false,
+              "duration": 458,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .post(\"api/login\")\n  .send({\n    email: \"eve.holt@reqres.in\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(400);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "5637c99a-3585-4f83-b7eb-281c7f0d7833",
+              "parentUUID": "0c32071d-4123-47ed-bf28-13e7c24ab831",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5637c99a-3585-4f83-b7eb-281c7f0d7833"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 458,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "23d67e63-ab88-4ac8-a6f7-881dfff9df1f",
+          "title": "Post Register",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\POST\\RegisterSuccessful.js",
+          "file": "\\src\\test\\api\\POST\\RegisterSuccessful.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return the new id and token data",
+              "fullTitle": "Post Register should return the new id and token data",
+              "timedOut": false,
+              "duration": 429,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .post(\"api/register\")\n  .send({\n    email: \"eve.holt@reqres.in\",\n    password: \"pistol\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "e2c0d039-8cc7-45e5-8522-9549b0dab3a9",
+              "parentUUID": "23d67e63-ab88-4ac8-a6f7-881dfff9df1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e2c0d039-8cc7-45e5-8522-9549b0dab3a9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 429,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b91f7b8f-c89f-4582-8b43-85873ab5810b",
+          "title": "Post Register With No Password",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\POST\\RegisterUnsuccessful.js",
+          "file": "\\src\\test\\api\\POST\\RegisterUnsuccessful.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return an error message because there is no pswd data",
+              "fullTitle": "Post Register With No Password should return an error message because there is no pswd data",
+              "timedOut": false,
+              "duration": 459,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .post(\"api/register\")\n  .send({\n    email: \"eve.holt@reqres.in\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(400);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "19a7db83-b668-4def-b8a5-d1ea5882f5be",
+              "parentUUID": "b91f7b8f-c89f-4582-8b43-85873ab5810b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "19a7db83-b668-4def-b8a5-d1ea5882f5be"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 459,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "19e3ef62-f481-4fdd-a490-cde28f30c828",
+          "title": "Update User By Id",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\PUT\\UpdateUserById.js",
+          "file": "\\src\\test\\api\\PUT\\UpdateUserById.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should change user data by id",
+              "fullTitle": "Update User By Id should change user data by id",
+              "timedOut": false,
+              "duration": 466,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .put(\"api/users/2\")\n  .send({\n    name: \"morpheus\",\n    job: \"leader\",\n  })\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(200);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "c59f8461-851a-40b5-a92a-d5e386a036d9",
+              "parentUUID": "19e3ef62-f481-4fdd-a490-cde28f30c828",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c59f8461-851a-40b5-a92a-d5e386a036d9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 466,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "dbb5d254-a544-4ef6-a6ea-f113d6b172a2",
+          "title": "Delete User By Id",
+          "fullFile": "C:\\Dev\\MySkill\\MySkill - Quality Assurance\\API Automation\\Reqres.in-API-testing\\src\\test\\api\\REMOVE\\DeleteUserById.js",
+          "file": "\\src\\test\\api\\REMOVE\\DeleteUserById.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return the deleted user data",
+              "fullTitle": "Delete User By Id should return the deleted user data",
+              "timedOut": false,
+              "duration": 427,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(5000);\nrequest(server)\n  .delete(\"api/users/2\")\n  .then((response) => {\n    console.log(response.status);\n    console.log(response.body);\n    expect(response.status).to.equal(204);\n    done();\n  })\n  .catch((error) => done(error));",
+              "err": {},
+              "uuid": "c57a976c-2235-48f8-a05e-18b634aa881a",
+              "parentUUID": "dbb5d254-a544-4ef6-a6ea-f113d6b172a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c57a976c-2235-48f8-a05e-18b634aa881a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 427,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "reqres.in-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "reporting": "mocha 'src/test/api/**/*.js' --reporter mochawesome",
+    "get1": "mocha src\\test\\api\\GET\\GetListUsers.js",
+    "get2": "mocha src\\test\\api\\GET\\GetSingleUser.js",
+    "get3": "mocha src\\test\\api\\GET\\GetSingleUserNotFound.js",
+    "get4": "mocha src\\test\\api\\GET\\GetResourceList.js",
+    "get5": "mocha src\\test\\api\\GET\\GetResourceById.js",
+    "get6": "mocha src\\test\\api\\GET\\GetResourceListNotFound.js",
+    "post1": "mocha src\\test\\api\\POST\\AddNewUser.js",
+    "post2": "mocha src\\test\\api\\POST\\RegisterSuccessful.js",
+    "post3": "mocha src\\test\\api\\POST\\RegisterUnsuccessful.js",
+    "post4": "mocha src\\test\\api\\POST\\LoginSuccessful.js",
+    "post5": "mocha src\\test\\api\\POST\\LoginUnsuccessful.js",
+    "put": "mocha src\\test\\api\\PUT\\UpdateUserById.js",
+    "del": "mocha src\\test\\api\\REMOVE\\DeleteUserById.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5"
+  }
+}
